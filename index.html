@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics Assingment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Part 4: Responsive NavBar -->
+    <!-- NavBar still doesn't drop down with links? -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap Basics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="#navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Part 1: Form Creation and Layout -->
+    <!-- Registration Form w/ First Name, Last Name, Email, Password, -->
+    <!-- and checkbox for terms agreement -->
+    <div class="container mt-5 pt-5">
+        <h2 class="text-center text-primary">User Registration</h2>
+        <form class="border p-3 shadow-sm bg-light">
+            <!-- First and Last Name -->
+            <div class="row m-2">
+                <div class="col-6 p-1">
+                    <label for="first-name" class="form-label">First Name:</label>
+                    <input type="text" class="form-control" id="first-name" placeholder="Enter first name">
+                </div>
+                <div class="col-6 p-1">
+                    <label for="last-name" class="form-label">Last Name:</label>
+                    <input type="text" class="form-control" id="last-name" placeholder="Enter last name">
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="row m-2">
+                <div class="col-12 p-1">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control is-invalid" id="email" placeholder="Enter email" required>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="row m-2">
+                <div class="col-12 p-1">
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" class="form-control is-invalid" id="password" placeholder="Enter password" required>
+                </div>
+            </div>
+
+            <!-- Term Agreements -->
+            <div class="row-m2">
+                <div class="col-12 p-1 text-center">
+                    <label for="terms" class="form-label">I agree with the <a class="text-primary text-decoration-underline" href="#">Terms of Agreement</a> </label>
+                    <input class="form-check-input p-2" type="checkbox" id="terms">
+                </div>
+            </div>
+            
+            <!-- Submit -->
+            <button type="submit" class="btn btn-success w-100 mt-3">Submit</button>
+        </form>
+    </div>
+
+    <!-- Part 2: Table for Displaying Data -->
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">User Data</h2>
+        <table class="table table-striped table-hover table-responsive border">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tyler Wronski</td>
+                    <td>wronski.tyler@example.com</td>
+                    <td>Admin</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John Smith</td>
+                    <td>john.smith@example.com</td>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Jane Smith</td>
+                    <td>jane.smith@example.com</td>
+                    <td>User</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Part 3: Image and Button Utilities -->
+    <div class="container fluid mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 md-5">
+                <div class="card shadow-lg p-3 bg-light border">
+                    <img class="img-fluid p-3" src="https://images.unsplash.com/photo-1598918190747-8ede2757cd65?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Purple Flowers">
+
+                    <img class="rounded-circle p-5" src="https://images.unsplash.com/photo-1511447333015-45b65e60f6d5?q=80&w=2155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Purple Bubbles">
+
+                    <button class="btn btn-primary m-3">Visible Button</button>
+
+                    <button class="btn btn-secondary m-3 d-none d-md-block">Hidden Button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
