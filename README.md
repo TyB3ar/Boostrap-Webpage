@@ -4,7 +4,7 @@ Some of the main featuares present include knowledge of basic Bootstrap structur
  - A dynamic and responsive navigation bar
  - Responsive table for data displayment
  - Image and button formatting for various screen sizes
- - A registration form that's easy to read and responsive to all screen sizes
+ - A registration form that's easy to read, responsive, and includes validation for inputs.
 
 Boostrap is an awesome and powerful tool that makes it super easy and fluid to build all kinds of dynamic websites! 
 Thank you! 
